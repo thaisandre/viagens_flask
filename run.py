@@ -1,6 +1,6 @@
 from flask import Flask
 from database import db
-from rotas import rotas_api
+from rotas_app import rotas_api
 from config import DevConfiguration, TestConfigurarion
 
 def create_app(config=DevConfiguration):

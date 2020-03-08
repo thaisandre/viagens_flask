@@ -1,6 +1,6 @@
 from flask_restplus import Resource
-from rotas.pais.dto import PaisDto, PaisInputDto, PaisOutputDto
-from rotas.pais.service import save, list_all
+from rotas_app.pais.dto import PaisDto, PaisInputDto, PaisOutputDto
+from rotas_app.pais.service import save
 
 api = PaisDto.api
 

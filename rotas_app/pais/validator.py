@@ -1,5 +1,5 @@
-from rotas.pais.model import Pais
-from rotas.validator.validators import not_empty
+from rotas_app.pais.model import Pais
+from rotas_app.validator.validators import not_empty
 
 def validate(value):
     not_empty(value)

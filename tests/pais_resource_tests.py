@@ -1,10 +1,10 @@
 import unittest
 from tests.base import BaseTestCase
 import json
-from rotas.pais import service
-from rotas.pais.model import Pais
+from rotas_app.pais import service
+from rotas_app.pais.model import Pais
 
-url = '/rotas-api/paises/'
+url = '/rotas_app-api/paises/'
 
 class TestPaisResource(BaseTestCase):
 

@@ -1,8 +1,8 @@
 import unittest
 from tests.base import BaseTestCase
-from rotas.pais.model import Pais
-from rotas.pais.validator import validate
-from rotas.pais import service
+from rotas_app.pais.model import Pais
+from rotas_app.pais.validator import validate
+from rotas_app.pais import service
 
 class TestPaisValidator(BaseTestCase):
 

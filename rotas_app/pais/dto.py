@@ -1,19 +1,12 @@
 from flask_restplus import fields, Namespace, reqparse
-from rotas.pais.validator import validate
-from rotas.pais.model import Pais
+from rotas_app.pais.validator import validate
+from rotas_app.pais.model import Pais
 
 class PaisDto:
     api = Namespace('pais', description='recursos paises')
 
 class PaisInputDto(PaisDto):
     novo_pais = reqparse.RequestParser()\
-        .add_argument('nome',
-                      type=validate,
-                      required=True,
-                      location='json',
-                      nullable=False)
-
-    pais_editado = reqparse.RequestParser()\
         .add_argument('nome',
                       type=validate,
                       required=True,
